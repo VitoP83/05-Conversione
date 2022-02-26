@@ -6,12 +6,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Lezione HTML</title>
-    <style>img{max-width:300px;}</style>
+    <style>
+        img {
+            max-width: 300px;
+        }
+    </style>
 </head>
 
 <body>
-<img src="assets/img1.webp" alt="Immagine 1"/>
-<img src="assets/img2.webp" alt="Immagine 2"/>
+    <picture>
+        <source media="(min-width:600px)" srcset="assets/business-man.webp">
+        <source media="(min-width:800px)" srcset="assets/business-man.jpg">
+        <img src="assets/business-man.webp" alt="business-man" />
+    </picture>
+
+    <picture>
+        <source media="(min-width:600px)" srcset="assets/ok-hand.webp">
+        <source media="(min-width:800px)" srcset="assets/ok-hand.jpg">
+        <img src="assets/ok-hand.webp" alt="ok-hand" />
+    </picture>
+    
 </body>
 
 </html>
